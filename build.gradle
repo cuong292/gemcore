@@ -70,6 +70,13 @@ buildscript {
     repositories {
         jcenter()
         mavenCentral()
+        maven {url "https://clojars.org/repo/"}
+        maven { url "https://jitpack.io" }
+        google()
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.0'
@@ -82,6 +89,10 @@ allprojects {
     repositories {
         jcenter()
         mavenCentral()
+        maven {
+            url "https://maven.google.com" // Google's Maven repository
+        }
+        maven { url "https://jitpack.io" }
         google()
     }
 }
