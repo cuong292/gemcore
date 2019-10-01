@@ -4,10 +4,10 @@ apply plugin: 'com.android.library'
 group = 'com.github.tuandt-gem'
 
 android {
-    compileSdkVersion project.compileSdkVersion as int
+    compileSdkVersion 29
     defaultConfig {
-        minSdkVersion project.minSdkVersion as int
-        targetSdkVersion project.targetSdkVersion as int
+        minSdkVersion 17
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
     }
@@ -21,22 +21,18 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    api "com.android.support:appcompat-v7:${supportLibraryVersion}"
-    api "com.android.support:support-v4:${supportLibraryVersion}"
-    api "com.android.support:design:${supportLibraryVersion}"
-    api "com.android.support:cardview-v7:${supportLibraryVersion}"
+    api "com.android.support:appcompat-v7:28.0.0"
+    api "com.android.support:support-v4:28.0.0"
+    api "com.android.support:design:28.0.0"
+    api "com.android.support:cardview-v7:28.0.0"
 
-    api "com.jakewharton:butterknife:${butterKnifeVersion}"
+    api "com.jakewharton:butterknife:8.4.1"
 
-    annotationProcessor "com.jakewharton:butterknife-compiler:${butterKnifeVersion}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:8.4.1"
 
-    api "com.squareup.retrofit2:retrofit:${retrofitVersion}"
-    api "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
-    api "com.squareup.okhttp3:logging-interceptor:${okhttpLoggingInterceptorVersion}"
-    api "com.github.bumptech.glide:glide:${glideVersion}"
-    api "com.squareup.picasso:picasso:${picassoVersion}"
-    api "com.google.guava:guava:${guavaVersion}"
-    api "org.greenrobot:eventbus:${eventbusVersion}"
+    api "com.github.bumptech.glide:glide:4.3.0"
+    api "com.google.guava:guava:27.0.1"
+    api "org.greenrobot:eventbus:3.1.1"
 
     api 'org.apache.commons:commons-lang3:3.8.1'
     api 'uk.co.chrisjenx:calligraphy:2.3.0'
