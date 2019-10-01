@@ -38,7 +38,7 @@ dependencies {
     api 'uk.co.chrisjenx:calligraphy:2.3.0'
     api 'com.makeramen:roundedimageview:2.3.0'
     implementation("com.squareup.okhttp3:okhttp:4.2.0")
-    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
 
 }
 
@@ -49,7 +49,7 @@ buildscript {
     repositories {
         jcenter()
         mavenCentral()
-        maven {url "https://clojars.org/repo/"}
+        maven { url "https://clojars.org/repo/" }
         maven { url "https://jitpack.io" }
         google()
         maven {
